@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:7707/v1",
+  baseURL: "https://api.berimcafe.org/v1",
 });
 
 export default api;

@@ -46,7 +46,7 @@ const HeroSection = () => {
         </span>
       </div>
       <div className="text-zinc-700 text-center underline-offset-4 text-xl underline font-bold md:hidden">
-        <a href="http://localhost:7770" target="_blank">
+        <a href="https://panel.berimcafe.org" target="_blank">
           ورود به بخش فروشندگان
         </a>
       </div>
@@ -61,7 +61,11 @@ const HeroSection = () => {
         >
           <Call className="w-5 lg:w-6 h-fit" />
         </a>
-        <a className="text-zinc-700 text-center text-xl lg:text-2xl underline underline-offset-4 font-bold hidden md:block" href="http://localhost:7770" target="_blank">
+        <a
+          className="text-zinc-700 text-center text-xl lg:text-2xl underline underline-offset-4 font-bold hidden md:block"
+          href="https://panel.berimcafe.org"
+          target="_blank"
+        >
           ورود به بخش فروشندگان
         </a>
       </div>

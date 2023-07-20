@@ -133,7 +133,7 @@ const TabBar: FC<tabBarProps> = ({ cafe }) => {
             >
               <a
                 target="_blank"
-                href="http://localhost:7770"
+                href="https://panel.berimcafe.org"
                 className="flex items-end gap-1 text-gray-800 font-medium"
               >
                 <Building className="w-5 h-fit" variant={"Bulk"} />
