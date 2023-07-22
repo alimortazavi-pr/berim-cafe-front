@@ -86,15 +86,15 @@ class MyDocument extends Document {
             href="assets/icons/favicon-16x16.png"
           />
           <link rel="manifest" href="/manifest.json" />
-          <meta name="msapplication-TileColor" content="#fef08a" />
+          <meta name="msapplication-TileColor" content="#c4b5fd" />
           <meta
             name="msapplication-TileImage"
             content="assets/icons/ms-icon-144x144.png"
           />
-          <meta name="theme-color" content="#fef08a" />
+          <meta name="theme-color" content="#c4b5fd" />
           <meta
             name="description"
-            content="شما می‌توانید با بریم کافه خیلی ساده منو آنلاین کافه خود را بسازید"
+            content="شما میتونید خیلی راحت کافه های اطراف خود را پیدا کنید و منو آنلاین کافه هارا ببینید"
           ></meta>
           <meta name="author" content="alimortazavi.org"></meta>
         </Head>

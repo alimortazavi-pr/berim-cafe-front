@@ -8,7 +8,7 @@ import { Popover } from "@nextui-org/react";
 
 const HeroSection = () => {
   return (
-    <section className="w-screen min-h-screen bg-violet-100 flex flex-col items-center justify-between py-8 gap-4">
+    <section className="w-screen min-h-screen h-fit bg-violet-100 flex flex-col items-center justify-between py-8 gap-4">
       <div className="flex flex-col text-7xl font-black text-zinc-700">
         <span>بریم</span>
         <span>کافه</span>

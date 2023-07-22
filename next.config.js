@@ -13,6 +13,7 @@ module.exports = withPWA({
       "api.berimcafe.ir",
       "api.berimcafe.org",
       "api-panel.berimcafe.org",
+      "api-panel.berimcafe.ir",
       "cloud.berimcafe.ir",
     ],
   },
