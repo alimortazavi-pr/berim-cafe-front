@@ -13,7 +13,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="fa" dir="rtl" className="bg-white">
+      <Html lang="fa" dir="rtl" className="bg-violet-100">
         <Head>
           {CssBaseline.flush()}
           <link

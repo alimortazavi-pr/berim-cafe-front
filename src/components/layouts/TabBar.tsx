@@ -60,7 +60,7 @@ const TabBar: FC<tabBarProps> = ({ cafe }) => {
           } flex flex-col items-center gap-1`}
         >
           <Home
-            className="w-7 h-fit"
+            className="w-7 h-7"
             variant={router.pathname === "/" ? "Bulk" : "Linear"}
           />
           <span className="text-sm leading-none">خانه</span>
@@ -74,7 +74,7 @@ const TabBar: FC<tabBarProps> = ({ cafe }) => {
           } flex flex-col items-center gap-1`}
         >
           <MenuBoard
-            className="w-7 h-fit"
+            className="w-7 h-7"
             variant={router.pathname.includes("menu") ? "Bulk" : "Linear"}
           />
           <span className="text-sm leading-none">منو</span>
@@ -83,13 +83,13 @@ const TabBar: FC<tabBarProps> = ({ cafe }) => {
           className={`text-zinc-400 flex flex-col items-center gap-1 cursor-pointer`}
           onClick={() => setVisibleNoteBookModal(true)}
         >
-          <Stickynote className="w-7 h-fit" />
+          <Stickynote className="w-7 h-7" />
           <span className="text-sm leading-none">دفترچه</span>
         </div>
         <Dropdown placement="top-left">
           <Dropdown.Trigger>
             <div className={`text-zinc-400 flex flex-col items-center gap-1 cursor-pointer`}>
-              <Menu className="w-7 h-fit" />
+              <Menu className="w-7 h-7" />
               <span className="text-sm leading-none">بیشتر</span>
             </div>
           </Dropdown.Trigger>
@@ -104,7 +104,7 @@ const TabBar: FC<tabBarProps> = ({ cafe }) => {
                   href={`/profile`}
                   className="flex items-end gap-1 text-gray-800 font-medium"
                 >
-                  <User className="w-5 h-fit" variant={"Bulk"} />
+                  <User className="w-5 h-7" variant={"Bulk"} />
                   <span className="leading-none">پروفایل من</span>
                 </Link>
               </Dropdown.Item>
@@ -120,7 +120,7 @@ const TabBar: FC<tabBarProps> = ({ cafe }) => {
                     setVisibleGetMobileModal(true);
                   }}
                 >
-                  <LoginCurve className="w-5 h-fit" variant={"Bulk"} />
+                  <LoginCurve className="w-5 h-7" variant={"Bulk"} />
                   <span className="leading-none">ثبت‌نام | ورود </span>
                 </div>
               </Dropdown.Item>
@@ -136,7 +136,7 @@ const TabBar: FC<tabBarProps> = ({ cafe }) => {
                 href="https://panel.berimcafe.org"
                 className="flex items-end gap-1 text-gray-800 font-medium"
               >
-                <Building className="w-5 h-fit" variant={"Bulk"} />
+                <Building className="w-5 h-7" variant={"Bulk"} />
                 <span className="leading-none">ورود به بخش مدیریت کافه</span>
               </a>
             </Dropdown.Item>
@@ -154,7 +154,7 @@ const TabBar: FC<tabBarProps> = ({ cafe }) => {
                 className="flex items-end gap-1 text-red-600"
                 onClick={logOutFunc}
               >
-                <LogoutCurve className="w-5 h-fit" variant={"Bulk"} />
+                <LogoutCurve className="w-5 h-7" variant={"Bulk"} />
                 <span className="leading-none">خروج از حساب کاربری</span>
               </div>
             </Dropdown.Item> */}

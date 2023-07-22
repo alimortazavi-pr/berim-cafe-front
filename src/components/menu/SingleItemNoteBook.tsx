@@ -160,13 +160,13 @@ const SingleItemNoteBook: FC<singleItemProps> = ({ item, cafe }) => {
           </Popover.Content>
         </Popover>
 
-        <div className="flex items-center justify-between px-5 w-full">
+        <div className="flex items-center justify-center px-5 w-full">
           {notedItemLength <= 0 ? (
             <div
               className="text-zinc-900 font-semibold text-sm md:text-base cursor-pointer"
               onClick={addToNote}
             >
-              <span className="underline leading-none">افزودن</span>
+              <span className="underline leading-none">افزودن به دفترچه</span>
             </div>
           ) : (
             <div className="flex items-center gap-2">
@@ -196,12 +196,12 @@ const SingleItemNoteBook: FC<singleItemProps> = ({ item, cafe }) => {
             </div>
           )}
 
-          <div>
+          {/* <div>
             <Heart
               className="text-zinc-900 w-[15px] md:w-5 h-fit cursor-pointer"
               variant="Linear"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

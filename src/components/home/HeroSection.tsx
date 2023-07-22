@@ -24,7 +24,7 @@ const HeroSection = () => {
               className="text-white bg-zinc-700 hover:bg-zinc-900 rounded-full text-4xl lg:text-5xl w-[266px] lg:w-[300px] h-[75px] leading-none flex items-center justify-center font-black hover:scale-105 duration-300"
             >
               بزن بریم
-              <ArrowLeft className="w-8 lg:w-9 h-fit mr-1" />
+              <ArrowLeft className="w-8 lg:w-9 h-9 mr-1" />
             </button>
           </Popover.Trigger>
           <Popover.Content>
@@ -59,7 +59,7 @@ const HeroSection = () => {
           href="tel:+989127461218"
           className="text-white bg-zinc-700 hover:bg-zinc-900 rounded-full text-4xl w-11 h-11 lg:w-12 lg:h-12 leading-none flex items-center justify-center font-black"
         >
-          <Call className="w-5 lg:w-6 h-fit" />
+          <Call className="w-5 lg:w-6 h-5 lg:h-6" />
         </a>
         <a
           className="text-zinc-700 text-center text-xl lg:text-2xl underline underline-offset-4 font-bold hidden md:block"

@@ -75,7 +75,7 @@ const NavBar: FC<navBarProps> = ({ title, cafe }) => {
               color="default"
               ghost
               className="hidden lg:block"
-              icon={<Stickynote className={"w-6 h-fit"} />}
+              icon={<Stickynote className={"w-6 h-6 !text-blue-400"} />}
               onClick={() => setVisibleNoteBookModal(true)}
             />
             <Dropdown placement="bottom-left">
@@ -86,7 +86,7 @@ const NavBar: FC<navBarProps> = ({ title, cafe }) => {
                   ghost
                   className="hidden lg:block"
                   icon={
-                    <div className="w-6 h-fit">
+                    <div className="w-6 h-6">
                       <MenuIconSvg className={""} filled />
                     </div>
                   }
@@ -102,7 +102,7 @@ const NavBar: FC<navBarProps> = ({ title, cafe }) => {
                     href={"/"}
                     className="flex items-end gap-1 text-gray-800 font-medium"
                   >
-                    <Home className="w-5 h-fit" variant={"Bulk"} />
+                    <Home className="w-5 h-5" variant={"Bulk"} />
                     <span className="leading-none">خانه</span>
                   </Link>
                 </Dropdown.Item>
@@ -115,7 +115,7 @@ const NavBar: FC<navBarProps> = ({ title, cafe }) => {
                     href={`/${router.query.username}/menu`}
                     className="flex items-end gap-1 text-gray-800 font-medium"
                   >
-                    <MenuBoard className="w-5 h-fit" variant={"Bulk"} />
+                    <MenuBoard className="w-5 h-5" variant={"Bulk"} />
                     <span className="leading-none">منو</span>
                   </Link>
                 </Dropdown.Item>
@@ -129,7 +129,7 @@ const NavBar: FC<navBarProps> = ({ title, cafe }) => {
                     href={`/profile`}
                     className="flex items-end gap-1 text-gray-800 font-medium"
                   >
-                    <User className="w-5 h-fit" variant={"Bulk"} />
+                    <User className="w-5 h-5" variant={"Bulk"} />
                     <span className="leading-none">پروفایل من</span>
                   </Link>
                 </Dropdown.Item>
@@ -145,7 +145,7 @@ const NavBar: FC<navBarProps> = ({ title, cafe }) => {
                       setVisibleGetMobileModal(true);
                     }}
                   >
-                    <LoginCurve className="w-5 h-fit" variant={"Bulk"} />
+                    <LoginCurve className="w-5 h-5" variant={"Bulk"} />
                     <span className="leading-none">ثبت‌نام | ورود </span>
                   </div>
                 </Dropdown.Item>
@@ -161,7 +161,7 @@ const NavBar: FC<navBarProps> = ({ title, cafe }) => {
                     href="https://panel.berimcafe.org"
                     className="flex items-end gap-1 text-gray-800 font-medium"
                   >
-                    <Building className="w-5 h-fit" variant={"Bulk"} />
+                    <Building className="w-5 h-5" variant={"Bulk"} />
                     <span className="leading-none">
                       ورود به بخش مدیریت کافه
                     </span>
@@ -181,7 +181,7 @@ const NavBar: FC<navBarProps> = ({ title, cafe }) => {
                   className="flex items-end gap-1 text-red-600"
                   onClick={logOutFunc}
                 >
-                  <LogoutCurve className="w-5 h-fit" variant={"Bulk"} />
+                  <LogoutCurve className="w-5 h-5" variant={"Bulk"} />
                   <span className="leading-none">خروج از حساب کاربری</span>
                 </div>
               </Dropdown.Item> */}

@@ -55,7 +55,8 @@ const CafeInformationModal: FC<cafeInformationModalProps> = ({
           </div>
           <h3 className="text-3xl font-bold text-zinc-800 mb-3">{cafe.name}</h3>
           <p className="text-zinc-800 font-medium mb-1">
-            {cafe.province} ، {cafe.city} ، {cafe.address}
+            {cafe.province} ، {cafe.city}
+            {cafe.address ? " ، " + cafe.address : ""}
           </p>
           <div className="text-zinc-800 mb-1 font-medium">
             {cafe.workingHours.map((workingHour, i) => (
@@ -70,28 +71,31 @@ const CafeInformationModal: FC<cafeInformationModalProps> = ({
               <span key={i}>{convertToPersian(phone)}</span>
             ))}
           </div>
-          <div className="w-full mb-3">
-            <Swiper
-              pagination={true}
-              modules={[Pagination]}
-              className="h-[200px] md:h-[400px] w-full"
-            >
-              {cafe.images?.map((image, i) => (
-                <SwiperSlide key={i} className="w-full h-full">
-                  <div className="relative rounded-2xl w-full h-full">
-                    <Image
-                      src={`https://api-panel.berimcafe.org/${image}`}
-                      alt=""
-                      fill
-                      className="rounded-3xl object-cover object-center"
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+          {cafe.images && cafe.images.length > 0 ? (
+            <div className="w-full mb-3">
+              <Swiper
+                pagination={true}
+                modules={[Pagination]}
+                className="h-[200px] md:h-[400px] w-full"
+              >
+                {cafe.images?.map((image, i) => (
+                  <SwiperSlide key={i} className="w-full h-full">
+                    <div className="relative rounded-2xl w-full h-full">
+                      <Image
+                        src={`https://api-panel.berimcafe.org/${image}`}
+                        alt=""
+                        fill
+                        className="rounded-3xl object-cover object-center"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          ) : null}
+
           <p className="mb-3 text-zinc-800 text-right">{cafe.about}</p>
-          {cafe.location && cafe.location.length >= 0 ? (
+          {cafe.location && cafe.location.length > 0 ? (
             <div className="w-full h-80 md:h-96">
               <NeshanMap
                 options={{

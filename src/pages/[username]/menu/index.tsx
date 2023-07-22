@@ -47,7 +47,13 @@ export const getServerSideProps: GetServerSideProps = async ({
     const categoriesResponse = await api.get(`/categories/${query.username}`);
     categories = categoriesResponse.data.categories;
   } catch (error: any) {
-    throw new Error(error.response?.data?.message || error);
+    if (error.response?.data?.statusCode == 404) {
+      return {
+        notFound: true,
+      };
+    } else {
+      throw new Error(error.response?.data?.message || error);
+    }
   }
 
   return {

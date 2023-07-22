@@ -48,7 +48,7 @@ const SearchInputNav = () => {
         placeholder="جستجو ... مثلا : اسپرسو"
         contentLeft={
           <div className="pr-3">
-            <SearchNormal1 className="w-5 h-fit text-zinc-400" />
+            <SearchNormal1 className="w-5 h-5 text-zinc-400" />
           </div>
         }
         width="100%"
