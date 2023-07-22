@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Modal } from "@nextui-org/react";
+import { Button, Modal } from "@nextui-org/react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
@@ -35,7 +35,7 @@ const CafeInformationModal: FC<cafeInformationModalProps> = ({
       className="bg-white !rounded-none lg:!rounded-3xl"
     >
       <Modal.Body className="!px-3">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center pb-20 md:mb-0">
           <div className="relative w-[135px] h-[135px] mb-4 rounded-full border border-violet-300">
             {cafe.logo ? (
               <Image
@@ -54,7 +54,7 @@ const CafeInformationModal: FC<cafeInformationModalProps> = ({
             )}
           </div>
           <h3 className="text-3xl font-bold text-zinc-800 mb-3">{cafe.name}</h3>
-          <p className="text-zinc-800 font-medium mb-1">
+          <p className="text-zinc-800 font-medium mb-1 text-center">
             {cafe.province} ، {cafe.city}
             {cafe.address ? " ، " + cafe.address : ""}
           </p>
@@ -68,7 +68,9 @@ const CafeInformationModal: FC<cafeInformationModalProps> = ({
           </div>
           <div className="text-zinc-800 mb-3 font-medium flex flex-col items-center">
             {cafe.phones.map((phone, i) => (
-              <span key={i} className="">{convertToPersian(phone)}</span>
+              <span key={i} className="">
+                {convertToPersian(phone)}
+              </span>
             ))}
           </div>
           {cafe.images && cafe.images.length > 0 ? (
@@ -76,7 +78,7 @@ const CafeInformationModal: FC<cafeInformationModalProps> = ({
               <Swiper
                 pagination={true}
                 modules={[Pagination]}
-                className="h-[200px] md:h-[400px] w-full"
+                className="h-80 md:h-96 w-full"
               >
                 {cafe.images?.map((image, i) => (
                   <SwiperSlide key={i} className="w-full h-full">
@@ -118,6 +120,14 @@ const CafeInformationModal: FC<cafeInformationModalProps> = ({
               />
             </div>
           ) : null}
+          <Button
+            color={"error"}
+            ghost
+            className="w-full mt-5"
+            onClick={() => setVisible(false)}
+          >
+            برگشت
+          </Button>
         </div>
       </Modal.Body>
     </Modal>
