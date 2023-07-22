@@ -75,7 +75,7 @@ const NavBar: FC<navBarProps> = ({ title, cafe }) => {
               color="default"
               ghost
               className="hidden lg:block"
-              icon={<Stickynote className={"w-6 h-6 !text-blue-400"} />}
+              icon={<Stickynote className={"w-6 h-6"} />}
               onClick={() => setVisibleNoteBookModal(true)}
             />
             <Dropdown placement="bottom-left">

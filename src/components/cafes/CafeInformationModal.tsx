@@ -58,7 +58,7 @@ const CafeInformationModal: FC<cafeInformationModalProps> = ({
             {cafe.province} ، {cafe.city}
             {cafe.address ? " ، " + cafe.address : ""}
           </p>
-          <div className="text-zinc-800 mb-1 font-medium">
+          <div className="text-zinc-800 mb-1 font-medium flex flex-col items-center">
             {cafe.workingHours.map((workingHour, i) => (
               <span key={i}>
                 از ساعت {convertToPersian(workingHour.from)} تا ساعت{" "}
@@ -66,9 +66,9 @@ const CafeInformationModal: FC<cafeInformationModalProps> = ({
               </span>
             ))}
           </div>
-          <div className="text-zinc-800 mb-3 font-medium">
+          <div className="text-zinc-800 mb-3 font-medium flex flex-col items-center">
             {cafe.phones.map((phone, i) => (
-              <span key={i}>{convertToPersian(phone)}</span>
+              <span key={i} className="">{convertToPersian(phone)}</span>
             ))}
           </div>
           {cafe.images && cafe.images.length > 0 ? (
