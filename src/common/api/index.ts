@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://api.berimcafe.org/v1",
+  baseURL: "https://api-berim-cafe.cyclic.cloud/v1",
 });
 
 export default api;

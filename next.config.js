@@ -15,6 +15,7 @@ module.exports = withPWA({
       "api-panel.berimcafe.org",
       "api-panel.berimcafe.ir",
       "cloud.berimcafe.ir",
+      "api-panel-berim-cafe.cyclic.cloud",
     ],
   },
 });
