@@ -143,14 +143,14 @@ const SingleItem: FC<singleItemProps> = ({ item, cafe }) => {
         <div className="relative w-24 md:w-28 h-24 md:h-28 rounded-full mb-2">
           {item.thumbnailImage ? (
             <Image
-              src={`https://api-panel-berim-cafe.cyclic.cloud/${item.thumbnailImage}`}
+              src={`https://beim-cafe-panel.liara.run/${item.thumbnailImage}`}
               alt=""
               fill
               className="rounded-full object-cover object-center"
             />
           ) : cafe?.logo ? (
             <Image
-              src={`https://api-panel-berim-cafe.cyclic.cloud/${cafe?.logo}`}
+              src={`https://beim-cafe-panel.liara.run/${cafe?.logo}`}
               alt=""
               fill
               className="rounded-full object-cover object-center"

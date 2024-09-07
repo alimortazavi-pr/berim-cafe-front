@@ -193,7 +193,7 @@ const NavBar: FC<navBarProps> = ({ title, cafe }) => {
             >
               {cafe?.logo ? (
                 <Image
-                  src={`https://api-panel-berim-cafe.cyclic.cloud/${cafe.logo}`}
+                  src={`https://beim-cafe-panel.liara.run/${cafe.logo}`}
                   alt=""
                   fill
                   className="rounded-full object-cover object-center"
