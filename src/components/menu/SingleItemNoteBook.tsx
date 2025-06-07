@@ -123,14 +123,14 @@ const SingleItemNoteBook: FC<singleItemProps> = ({ item, cafe }) => {
         <div className="relative w-24 md:w-28 h-24 md:h-28 rounded-full mb-2">
           {item.thumbnailImage ? (
             <Image
-              src={`https://beim-cafe-panel.liara.run/${item.thumbnailImage}`}
+              src={`http://localhost:7777/${item.thumbnailImage}`}
               alt=""
               fill
               className="rounded-full object-cover object-center"
             />
           ) : cafe?.logo ? (
             <Image
-              src={`https://beim-cafe-panel.liara.run/${cafe?.logo}`}
+              src={`http://localhost:7777/${cafe?.logo}`}
               alt=""
               fill
               className="rounded-full object-cover object-center"
