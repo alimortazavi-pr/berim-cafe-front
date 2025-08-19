@@ -30,7 +30,7 @@ const CategoriesList: FC<categoriesListProps> = ({ categories }) => {
             >
               <div className="relative w-10 md:w-11 h-10 md:h-11">
                 <Image
-                  src={`https://cloud.berimcafe.ir/icons/grocery-bag.png`}
+                  src={`https://berimcafe-icons.s3.ir-thr-at1.arvanstorage.ir/icons/grocery-bag.png`}
                   fill
                   alt=""
                   className=""
