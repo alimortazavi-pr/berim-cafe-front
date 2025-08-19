@@ -39,7 +39,7 @@ const CafeInformationModal: FC<cafeInformationModalProps> = ({
           <div className="relative w-[135px] h-[135px] mb-4 rounded-full border border-violet-300">
             {cafe.logo ? (
               <Image
-                src={`http://localhost:7777/${cafe.logo}`}
+                src={`https://berim-cafe-back-production.up.railway.app/${cafe.logo}`}
                 alt=""
                 fill
                 className="rounded-full object-cover object-center"
@@ -84,7 +84,7 @@ const CafeInformationModal: FC<cafeInformationModalProps> = ({
                   <SwiperSlide key={i} className="w-full h-full">
                     <div className="relative rounded-2xl w-full h-full">
                       <Image
-                        src={`http://localhost:7777/${image}`}
+                        src={`https://berim-cafe-back-production.up.railway.app/${image}`}
                         alt=""
                         fill
                         className="rounded-3xl object-cover object-center"

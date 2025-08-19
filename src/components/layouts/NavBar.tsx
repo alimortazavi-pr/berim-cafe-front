@@ -193,7 +193,7 @@ const NavBar: FC<navBarProps> = ({ title, cafe }) => {
             >
               {cafe?.logo ? (
                 <Image
-                  src={`http://localhost:7777/${cafe.logo}`}
+                  src={`https://berim-cafe-back-production.up.railway.app/${cafe.logo}`}
                   alt=""
                   fill
                   className="rounded-full object-cover object-center"
