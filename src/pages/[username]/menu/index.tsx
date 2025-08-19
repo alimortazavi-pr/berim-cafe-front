@@ -19,7 +19,7 @@ import api from "@/common/api";
 
 const Menu: FC<menuProps> = ({ categories, cafe }) => {
   return (
-    <div className="w-full h-screen flex flex-col">
+    <div className="w-full h-[100dvh] flex flex-col">
       <NavBar title={`منو آنلاین`} cafe={cafe} />
       <Head>
         <title>{cafe?.name} | بریم کافه</title>
